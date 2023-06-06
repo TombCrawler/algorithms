@@ -11,7 +11,19 @@ Step 5: While the stack is not empty, do the following:
     For each adjacent neighbor, if it has not been visited, do the following:
         Mark the neighbor as visited.
         Push the neighbor onto the stack.
-Step 6: Repeat step 5 until the stack is empty.'''
+Step 6: Repeat step 5 until the stack is empty.
+
+--Pseudocode for DFS--
+
+procedure DFS(node):
+    mark node as visited
+    process(node)
+    
+    for each neighbor in node.neighbors:
+        if neighbor is not visited:
+            DFS(neighbor)
+
+'''
 
 # Python3 program to print DFS traversal
 # from a given graph
@@ -19,7 +31,6 @@ from collections import defaultdict
 
 # This class represents a directed graph using
 # adjacency list representation
-
 
 class Graph:
 
