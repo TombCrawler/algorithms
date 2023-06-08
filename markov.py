@@ -8,7 +8,6 @@
 
      +——+——+——+                                 to remain at the same state  '''
 
-# let's import our library
 import scipy.linalg
 import numpy as np
 
